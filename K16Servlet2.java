@@ -17,7 +17,9 @@ public class K16Servlet2 extends HttpServlet {
 		//super.doGet(req, resp);
 		System.out.println("K16Servlet2開始");
 		HttpSession sess =req.getSession();
-		String monn = (String)req.getAttribute("TOI");
+		String x = (String)req.getAttribute("TOI");
+		String mon = x.getmonNo();
+		
 
 		String y = req.getParameter("corse");
 
